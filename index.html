@@ -15,7 +15,7 @@
     .job, .project { margin-bottom: 12px; }
     .toggle { cursor: pointer; background: #eaf3ff; padding: 8px 12px; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
     .toggle:hover { background: #d0e5ff; }
-    .content { display: none; padding: 8px 15px; margin-top: 5px; background: #f1f1f1; border-left: 4px solid #0078D7; border-radius: 0 5px 5px 0; }
+    .content, .panel { display: none; padding: 8px 15px; margin-top: 5px; background: #f1f1f1; border-left: 4px solid #0078D7; border-radius: 0 5px 5px 0; }
     .skills-bar { background: #ddd; border-radius: 5px; margin: 5px 0; overflow: hidden; }
     .skills-bar-fill { height: 18px; background: #0078D7; width: 0; text-align: right; padding-right: 5px; color: white; line-height: 18px; font-size: 0.8em; transition: width 1s; }
     @media (max-width: 600px) {
@@ -45,65 +45,66 @@
     <div class="section">
         <h2>Professional Experience</h2>
 
-      <div class="job">
-        <button class="accordion">Data Analyst (City Research Scientist) | NYC DHS/DSS/HRA</button>
-        <div class="panel">
-          <p><strong>Feb 2024 – Present | Manhattan, NY</strong></p>
-          <ul>
-            <li>Designed and automated executive reports from CARES and StreetSmart using SQL and Python.</li>
-            <li>Streamlined data collection and processing for Street Homeless Solutions, improving data completeness and reporting efficiency.</li>
-            <li>Supported executive decision-making with actionable analyses for City Hall and other stakeholders.</li>
-            <li>Developed automated workflows with Microsoft Power Automate, reducing manual reporting time.</li>
-          </ul>
+        <div class="job">
+            <button class="toggle">Data Analyst (City Research Scientist) | NYC DHS/DSS/HRA</button>
+            <div class="panel">
+                <p><strong>Feb 2024 – Present | Manhattan, NY</strong></p>
+                <ul>
+                    <li>Designed and automated executive reports from CARES and StreetSmart using SQL and Python.</li>
+                    <li>Streamlined data collection and processing for Street Homeless Solutions, improving data completeness and reporting efficiency.</li>
+                    <li>Supported executive decision-making with actionable analyses for City Hall and other stakeholders.</li>
+                    <li>Developed automated workflows with Microsoft Power Automate, reducing manual reporting time.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    
-      <div class="job">
-        <button class="accordion">Research Assistant | NYU</button>
-        <div class="panel">
-          <p><strong>Sep 2022 – May 2023 | Brooklyn, NY</strong></p>
-          <ul>
-            <li>Led research administration for a Hardware-in-Loop wearable alarm device assessing work zone safety.</li>
-            <li>Managed student volunteers implementing VR-based training, conducted benchmark experiments, and analyzed sensor data.</li>
-            <li>Produced feasibility assessments and business roadmaps for VR training and alarm product deployment.</li>
-          </ul>
+
+        <div class="job">
+            <button class="toggle">Research Assistant | NYU</button>
+            <div class="panel">
+                <p><strong>Sep 2022 – May 2023 | Brooklyn, NY</strong></p>
+                <ul>
+                    <li>Led research administration for a Hardware-in-Loop wearable alarm device assessing work zone safety.</li>
+                    <li>Managed student volunteers implementing VR-based training, conducted benchmark experiments, and analyzed sensor data.</li>
+                    <li>Produced feasibility assessments and business roadmaps for VR training and alarm product deployment.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    
-      <div class="job">
-        <button class="accordion">Climate & Energy Programme Officer | WWF Korea</button>
-        <div class="panel">
-          <p><strong>Feb 2022 – Aug 2022 | Seoul, Korea</strong></p>
-          <ul>
-            <li>Conducted climate and renewable energy program analysis and impact assessments.</li>
-            <li>Designed workshops and ESG consultancy initiatives for corporate stakeholders.</li>
-            <li>Produced policy and engagement reports to guide WWF Korea’s climate action strategy.</li>
-          </ul>
+
+        <div class="job">
+            <button class="toggle">Climate & Energy Programme Officer | WWF Korea</button>
+            <div class="panel">
+                <p><strong>Feb 2022 – Aug 2022 | Seoul, Korea</strong></p>
+                <ul>
+                    <li>Conducted climate and renewable energy program analysis and impact assessments.</li>
+                    <li>Designed workshops and ESG consultancy initiatives for corporate stakeholders.</li>
+                    <li>Produced policy and engagement reports to guide WWF Korea’s climate action strategy.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    
-      <div class="job">
-        <button class="accordion">Research Associate & Program Officer | Korea Development Institute</button>
-        <div class="panel">
-          <p><strong>Jan 2019 – Jan 2020 | Sejong, Korea</strong></p>
-          <ul>
-            <li>Managed policy consultation projects for Knowledge Sharing Program (KSP) with Nicaragua and Cambodia.</li>
-            <li>Conducted feasibility studies, infrastructure assessments, and e-procurement system evaluations.</li>
-            <li>Coordinated project reporting and stakeholder communications for international government partners.</li>
-          </ul>
+
+        <div class="job">
+            <button class="toggle">Research Associate & Program Officer | Korea Development Institute</button>
+            <div class="panel">
+                <p><strong>Jan 2019 – Jan 2020 | Sejong, Korea</strong></p>
+                <ul>
+                    <li>Managed policy consultation projects for Knowledge Sharing Program (KSP) with Nicaragua and Cambodia.</li>
+                    <li>Conducted feasibility studies, infrastructure assessments, and e-procurement system evaluations.</li>
+                    <li>Coordinated project reporting and stakeholder communications for international government partners.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    
-      <div class="job">
-        <button class="accordion">Research Assistant | KOSI / SNU</button>
-        <div class="panel">
-          <ul>
-            <li>Evaluated SME funding programs in Korea using PSM-DID methods, analyzing treatment effects and revenue trends.</li>
-            <li>Developed GIS lab materials and tutorials for environmental data visualization using ArcGIS.</li>
-            <li>Assisted editorial work for public performance management publications.</li>
-          </ul>
+
+        <div class="job">
+            <button class="toggle">Research Assistant | KOSI / SNU</button>
+            <div class="panel">
+                <ul>
+                    <li>Evaluated SME funding programs in Korea using PSM-DID methods, analyzing treatment effects and revenue trends.</li>
+                    <li>Developed GIS lab materials and tutorials for environmental data visualization using ArcGIS.</li>
+                    <li>Assisted editorial work for public performance management publications.</li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </div> <!-- End Professional Experience -->
 
     <div class="section">
         <h2>Education</h2>
@@ -123,49 +124,51 @@
 
     <div class="section">
         <h2>Projects</h2>
-        
-          <div class="project">
-            <button class="accordion">HOPE Count Dashboard</button>
+
+        <div class="project">
+            <button class="toggle">HOPE Count Dashboard</button>
             <div class="panel">
-              <ul>
-                <li>Designed interactive dashboards visualizing NYC homelessness trends using SQL, Python, and Plotly.</li>
-                <li>Translated complex client demographics and shelter data into actionable insights for cross-functional teams.</li>
-              </ul>
-              <p><a href="dashboards/hope_count.html" target="_blank">View Dashboard</a></p>
+                <ul>
+                    <li>Designed interactive dashboards visualizing NYC homelessness trends using SQL, Python, and Plotly.</li>
+                    <li>Translated complex client demographics and shelter data into actionable insights for cross-functional teams.</li>
+                </ul>
+                <p><a href="dashboards/hope_count.html" target="_blank">View Dashboard</a></p>
             </div>
-          </div>
-        
-          <div class="project">
-            <button class="accordion">Wearable Alarm Feasibility Study (NYU)</button>
+        </div>
+
+        <div class="project">
+            <button class="toggle">Wearable Alarm Feasibility Study (NYU)</button>
             <div class="panel">
-              <ul>
-                <li>Evaluated VR-based pedestrian safety system using real-world sensor data.</li>
-                <li>Produced feasibility assessment and business roadmap for product adoption.</li>
-              </ul>
+                <ul>
+                    <li>Evaluated VR-based pedestrian safety system using real-world sensor data.</li>
+                    <li>Produced feasibility assessment and business roadmap for product adoption.</li>
+                </ul>
             </div>
-          </div>
-        
-          <div class="project">
-            <button class="accordion">AI/LLM Exploration Project</button>
+        </div>
+
+        <div class="project">
+            <button class="toggle">AI/LLM Exploration Project</button>
             <div class="panel">
-              <ul>
-                <li>Applied NLP to classify and tokenize website text for client sentiment analysis.</li>
-                <li>Built Python scripts to automate data cleaning and text analytics for research purposes.</li>
-              </ul>
+                <ul>
+                    <li>Applied NLP to classify and tokenize website text for client sentiment analysis.</li>
+                    <li>Built Python scripts to automate data cleaning and text analytics for research purposes.</li>
+                </ul>
             </div>
-          </div>
-        
-          <div class="project">
-            <button class="accordion">Logistics Market Research (CBRE Korea)</button>
+        </div>
+
+        <div class="project">
+            <button class="toggle">Logistics Market Research (CBRE Korea)</button>
             <div class="panel">
-              <ul>
-                <li>Collected and analyzed data for 70+ warehouse properties to support real estate market reporting.</li>
-                <li>Developed visualizations and insights for investor and policy decision-making.</li>
-              </ul>
+                <ul>
+                    <li>Collected and analyzed data for 70+ warehouse properties to support real estate market reporting.</li>
+                    <li>Developed visualizations and insights for investor and policy decision-making.</li>
+                </ul>
             </div>
-          </div>
-    </div>
-</div>
+        </div>
+
+    </div> <!-- End Projects -->
+
+</div> <!-- End container -->
 
 <script>
     const toggles = document.querySelectorAll('.toggle');
@@ -187,6 +190,4 @@
 </script>
 
 </body>
-
 </html>
-
